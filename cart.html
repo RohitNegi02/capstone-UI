@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemob.css" />
+    <script defer src="global_script.js"></script>
+    <script defer src="cart.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div><a href="index.html">VENIA</a></div>
+
+      <nav class="navbar-list">
+        <a href="index.html">HOME</a>
+        <a href="products.html?category=women's clothing&value=true">WOMEN</a>
+        <a href="products.html?category=men's clothing&value=true">MEN</a>
+        <a
+          href="products.html?category=electronics&value=true"
+          onclick=" getCategoryProduct(electronics,value);"
+          >ELECTRONICS</a
+        >
+        <a href="#">JWELLERY</a>
+      </nav>
+      <a href="cart.html">GO TO CART</a>
+    </header>
+    <h1 class="cartHead">Your Shopping Cart</h1>
+    <div class="container-cart">
+      <main>
+        <div class="cart-items"></div>
+        <div>
+          <span>Estimate your Shipping</span><span>Shipping to 19001</span>
+        </div>
+        <div>
+          <span>Enter a Coupon Code</span><span>20% Discount applied</span>
+        </div>
+        <div>Apply Gift Card</div>
+      </main>
+      <aside class="summary">
+        <h3>Pricing Summary</h3>
+        <div><span>Sub Total</span><span>$388</span></div>
+        <div><span>Coupon</span><span>$388</span></div>
+        <div><span>Gift Card</span><span>$388</span></div>
+        <div><span>Estimated Tax</span><span>$388</span></div>
+        <div><span>Estimated Shipping</span><span>$388</span></div>
+        <div><span>Estimated total</span><span>$388</span></div>
+        <button>Checkout</button>
+      </aside>
+    </div>
+
+    <footer>
+      <div>
+        <ul>
+          <li>Account</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Help</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Follow Us!</li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus tenetur molestiae
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

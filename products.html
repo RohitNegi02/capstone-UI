@@ -1,0 +1,122 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemob.css" />
+    <script defer src="script.js"></script>
+    <script defer src="global_script.js"></script>
+
+    <title>Products</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div><a href="index.html">VENIA</a></div>
+
+      <nav class="navbar-list">
+      <a href="index.html">HOME</a>
+      <a href="products.html?category=women's clothing&value=true">WOMEN</a>
+      <a href="products.html?category=men's clothing&value=true">MEN</a>
+      <a
+        href="products.html?category=electronics&value=true"
+        onclick=" getCategoryProduct(electronics,value);"
+        >ELECTRONICS</a
+      >
+      <a href="#">JWELLERY</a>
+    </nav>
+    <a href="cart.html">GO TO CART</a>
+    </header>
+    <section class="section-product">
+      <div>
+        <h2>Men's OutWear</h2>
+      </div>
+      <img src="hoodie.jpg" alt="" />
+    </section>
+    <section class="section-2-products">
+      <div class="img" onclick="togglefilter()">
+        <img src="sliders.svg" alt="" /><span>Filter Results</span>
+      </div>
+      <aside class="filter">
+        <div class="filterLbl">
+          <label> Filter: </label
+          ><img src="x.svg" alt="" onclick="togglefilter()" />
+        </div>
+        <div><label class="categoryLbl"> Categories: </label></div>
+        <div>
+          <input
+            type="checkbox"
+            id="jewellery"
+            name="jewelery"
+            value="jewellery"
+            class="prod"
+          /><label for="jewellery"> jewellery</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="electronics"
+            name="electronics"
+            value="electronics"
+            class="prod"
+          /><label for="electronics"> electronics</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="men's clothing"
+            name="men's clothing"
+            value="men's clothing"
+            class="prod"
+          /><label for="men's clothing"> men's clothing</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="women's clothing"
+            name="women's clothing"
+            value="women's clothing"
+            class="prod"
+          /><label for="women's clothing"> women's clothing</label>
+        </div>
+      </aside>
+      <div class="productdiv">
+        <div class="parent-div-products"></div>
+        <div class="numList"></div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <ul>
+          <li>Account</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Help</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Follow Us!</li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus tenetur molestiae
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

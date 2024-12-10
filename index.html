@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemob.css" />
+    <script defer src="global_script.js"></script>
+    <title>Venia</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div><a href="index.html">VENIA</a></div>
+
+      <nav class="navbar-list">
+        <a href="index.html">HOME</a>
+        <a href="products.html?category=women's clothing&value=true">WOMEN</a>
+        <a href="products.html?category=men's clothing&value=true">MEN</a>
+        <a
+          href="products.html?category=electronics&value=true"
+          onclick=" getCategoryProduct(electronics,value);"
+          >ELECTRONICS</a
+        >
+        <a href="#">JWELLERY</a>
+        
+        
+      </nav>
+      <a href="cart.html">GO TO CART</a>
+    </header>
+    <section class="heroBanner">
+      <div class="heroBanner-text">
+        <h1>Shop the New Signature Collection</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          provident reiciendis cumque molestias voluptatem sint
+        </p>
+
+        <button type="submit" onclick="window.location.href='/products.html';">
+          Shop Now
+        </button>
+      </div>
+      <div class="img-box">
+        <!-- //as img is an inline item putting width on it will have different impact -->
+        <img src="hom.jpg" alt="Hero Image" />
+      </div>
+    </section>
+    <section class="categories">
+      <div>
+        <img src="women.jpg" alt="" />
+        <div class="img-txt">
+          <span>Shop Women</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+      <div>
+        <img src="men.jpg" alt="" />
+        <div class="img-txt">
+          <span>Shop Men</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+      <div>
+        <img src="jewellery.jpg" alt="" />
+        <div class="img-txt">
+          <span>Jewellery</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+      <div>
+        <img src="electronics.jpg" alt="" />
+        <div class="img-txt">
+          <span>Electronics</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing</p>
+        </div>
+      </div>
+    </section>
+    <section class="promo-1">
+      <div class="promo-1-text">
+        <h1>Take off in the new signature leggings</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          provident reiciendis cumque molestias voluptatem sint
+        </p>
+        <div class="promo-1-btn-box">
+          <button>Shop Now</button>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="img-box">
+        <!-- //as img is an inline item putting width on it will have different impact -->
+        <img src="section-2.jpg" alt="Hero Image" />
+      </div>
+    </section>
+    <section class="promo-2">
+      <img src="section-4.jpg" alt="" />
+      <div>
+        <h2>Conquer your Next Adventure</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <button>Shop Devices</button>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <ul>
+          <li>Account</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Help</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Follow Us!</li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus tenetur molestiae
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

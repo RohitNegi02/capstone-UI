@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="productscript.js"></script>
+    <script src="cart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylemob.css" />
+    <script defer src="global_script.js"></script>
+
+    <title>Product</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div><a href="index.html">VENIA</a></div>
+
+      <nav class="navbar-list">
+      <a href="index.html">HOME</a>
+      <a href="products.html?category=women's clothing&value=true">WOMEN</a>
+      <a href="products.html?category=men's clothing&value=true">MEN</a>
+      <a
+        href="products.html?category=electronics&value=true"
+        onclick=" getCategoryProduct(electronics,value);"
+        >ELECTRONICS</a
+      >
+      <a href="#">JWELLERY</a>
+    </nav>
+    <a href="cart.html">GO TO CART</a>
+    </header>
+    <section class="product">
+      <div class="product-outside-container">
+        <div class="product-inside-container">
+          <!-- <div></div>
+          <img src="women.jpg" alt="" />
+          <div class="text-div">
+            <h1>testing the value</h1>
+            <div>price</div>
+            <div>ratings</div>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consequuntur assumenda dolores odit veniam! Eos, porro?
+              Repellendus ducimus dolores eum nisi.
+            </div>
+            <div>quantity</div>
+            <div>number field</div>
+            <button>ADD TO CART</button>
+            <div>save share</div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div>
+        <ul>
+          <li>Account</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>About Us</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Help</li>
+          <li>Sign In</li>
+          <li>Register</li>
+          <li>Register</li>
+        </ul>
+        <ul>
+          <li>Follow Us!</li>
+          <li>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis
+            necessitatibus tenetur molestiae
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

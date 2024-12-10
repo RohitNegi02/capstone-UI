@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="checkoutform.css" />
+    <link rel="stylesheet" href="stylemob.css" />
+    <script defer src="global_script.js"></script>
+    <script defer src="checkoutform.js"></script>
+  </head>
+  <body>
+    <div class="containerForm">
+      <form id="checkoutForm">
+        <div id="contact-info-form" class="form-group">
+          <label>Contact Information:</label>
+          <div class="two-column">
+            <div>Email:</div>
+            <div><input type="text" id="email" required /></div>
+            <span>Phone: <input type="text" id="phone" required /></span>
+          </div>
+        </div>
+
+        <div id="shipping-info-form" class="form-group">
+          <label>Shipping Information:</label>
+          <div class="two-column">
+            <span
+              >First Name: <input type="text" id="firstName" required
+            /></span>
+            <span>Last Name: <input type="text" id="lastName" required /></span>
+          </div>
+          <div class="two-column">
+            <span
+              >Street Address 1:
+              <input type="text" id="streetAddress1" required
+            /></span>
+            <span
+              >Street Address 2: <input type="text" id="streetAddress2"
+            /></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div id="shipping-info">
+            <div class="two-column">
+              <span>Filled Contact Information:</span>
+              <span>Filled Shipping Information:</span>
+            </div>
+            <div class="two-column">
+              <span>Email: <span id="displayEmail"></span></span>
+              <span>First Name: <span id="displayFirstName"></span></span>
+            </div>
+            <div class="two-column">
+              <span>Phone: <span id="displayPhone"></span></span>
+              <span>Last Name: <span id="displayLastName"></span></span>
+            </div>
+            <div class="two-column">
+              <span
+                >Street Address 1: <span id="displayStreetAddress1"></span
+              ></span>
+              <span
+                >Street Address 2: <span id="displayStreetAddress2"></span
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <button
+          type="button"
+          onclick="showShipping()"
+          id="continueButton"
+          disabled
+        >
+          Continue to Shipping Method
+        </button>
+
+        <div id="shipping-info">
+          <div class="form-group">
+            <label>Shipping Method:</label>
+            <div class="radio-group">
+              <input
+                type="radio"
+                id="standardShipping"
+                name="shippingMethod"
+                value="Standard Shipping"
+                disabled
+              />
+              <label for="standardShipping">Standard Shipping</label>
+
+              <input
+                type="radio"
+                id="expressShipping"
+                name="shippingMethod"
+                value="Express Shipping"
+                disabled
+              />
+              <label for="expressShipping">Express Shipping</label>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onclick="showPayment()"
+            id="shippingButton"
+            disabled
+          >
+            Select Shipping Method
+          </button>
+        </div>
+
+        <div id="payment-info" class="form-group">
+          <label>Payment Information:</label>
+          <div class="two-column">
+            <span
+              >Card Number: <input type="text" id="cardNumber" required
+            /></span>
+            <span
+              >Name on Card: <input type="text" id="nameOnCard" required
+            /></span>
+          </div>
+        </div>
+
+        <div id="payment-info-form">
+          <button
+            type="button"
+            onclick="showPaymentInfo()"
+            id="paymentButton"
+            disabled
+          >
+            Continue to Payment Information
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <script></script>
+  </body>
+</html>
